@@ -2,12 +2,17 @@ import time, os, sys, requests, re
 from bs4 import BeautifulSoup 
 print('''
 ###################################
-WELCOME TO ALPHA 0.0.1 of e621 1991
+WELCOME TO ALPHA 0.0.2 of e621 1991
 ###################################
 ''')
-star = 0
-if star == "0":
-    star = 0
+star = input('code or tag:')
+if star == "tag":
+    print('e621 1991 edition is only in alpha and cannot load tags yet sorry :(')
+    time.sleep(5)
+    exit
+
+if star == "code":
+    star = code
 while True:
     code = input("INSERT A CODE:")
     headers = {"User-Agent":"LizzieTheWitch"}
