@@ -5,14 +5,7 @@ print('''
 WELCOME TO ALPHA 0.0.2 of e621 1991
 ###################################
 ''')
-star = input('code or tag:')
-if star == "tag":
-    print('e621 1991 edition is only in alpha and cannot load tags yet sorry :(')
-    time.sleep(5)
-    exit
-
-if star == "code":
-    star = code
+a = 1
 while True:
     code = input("INSERT A CODE:")
     headers = {"User-Agent":"LizzieTheWitch"}
